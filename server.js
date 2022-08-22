@@ -8,8 +8,28 @@ const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
-const hbs = exphbs.create({ helpers });
 
+// Set up session
+const sess = {
+  secret: "FI0omAnsQNyXBpeSIVzA",
+  cookie: {
+    // 2mins timeout
+    // maxAge: 120000,
+    maxAge: 1200000,
+    sameSite: 'strict',
+    secure: false,
+    httpOnly: true,
+  },
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+      db: sequelize,
+  }),
+};
+app.use(session(sess));
+
+// Setting up handlebars
+const hbs = exphbs.create({ helpers });
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.use(express.json());
@@ -23,3 +43,4 @@ sequelize.sync({ force: false }).then(() => {
 });
 
 //
+
