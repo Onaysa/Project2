@@ -1,2 +1,3 @@
-DROP DATABASE IF EXISTS shoppinglist_db;
-CREATE DATABASE shoppinglist_db;
+DROP DATABASE IF EXISTS shopping_list_db;
+
+CREATE DATABASE shopping_list_db;

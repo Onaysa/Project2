@@ -5,53 +5,20 @@
             <div class="container">
                 <div class="row min-vh-100 align-items-center">
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                      <div class="content">
-                       <h3>List 1</h3>
-                       
-                        Lorem ipsum leo risu 
-                      </div>
-                      <i class='fa fa-trash'></i>
-                    </div>
-                  </div>
+               {{#if logged_in}}
+               {{#each lists as | list |}}
                   <div class="card">
                     <div class="card-content">
                       <div class="content">
-                        <h3>List 2</h3>
-                        Lorem ipsum leo risus 
-                      </div>
-                      <i class='fa fa-trash'></i>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-content">
-                      <div class="content">
-                        <h3>List 3</h3>
-                        Lorem ipsum leo risus, porta ac 
-                      </div>
-                      <i class='fa fa-trash'></i>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-content">
-                      <div class="content">
-                        <h3>List 4</h3>
-                        Lorem ipsum leo risus, 
-                      </div>
-                      <i class='fa fa-trash'></i>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-content">
-                      <div class="content">
-                        <h3>List 5</h3>
+                       <a href="/list/{{list.id}}"><h3 id="{{list.id}}">{{list.list_name}}</h3></a> 
                         Lorem ipsum leo risus, 
                       </div>
                       <i class='fa fa-trash'></i>
                     </div>
                     
                   </div>
+                  {{/each}}
+                  {{/if}}
                   <button id="add-list" class="button is-warning">Add new list</button>
             </div>
         </section> 

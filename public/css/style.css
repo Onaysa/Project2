@@ -90,7 +90,9 @@
     flex: 1;
     padding: 2% 4%;
   }
-  
+  #logout{
+    margin: 0;
+  }
   .home-section .home-bg{
     position: absolute;
   left: 5px;
