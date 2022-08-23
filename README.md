@@ -53,20 +53,15 @@ Click here for live link!
 
 We would to credit and thank you contributors.
 
-Justin Fleming 
-Anisa Ali
-Alec Simone
-Taja Jones
+- Justin Fleming 
+- Anisa Ali
+- Alec Simone
+- Taja Jones
 
-MySql
-Node
-Express
-Heroku
-
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+MySql,
+Node,
+Express,
+Heroku,
 
 ## License
 MIT License
@@ -96,7 +91,5 @@ SOFTWARE.
 ## Badges
 
 ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
 
