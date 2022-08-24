@@ -384,10 +384,10 @@
   }
 
 .add-new {
-    left: 800px;
+    left: 600px;
     position: relative;
     width: 200px;
-    top: -100px
+    top: -0px
 }
 
 .itemms2{
@@ -397,8 +397,12 @@
     top: -200px;
 }
  
-.total{
-  
+.total,
+.total-cost{
+  left: 800px;
+  position: relative;
+  width: 100px;
+  top: -500px;
 }
 
 .costs,
