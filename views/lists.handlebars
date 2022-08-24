@@ -1,26 +1,40 @@
-
- 
-         <section class="home-section" id="home">
-            <div class="home-bg"></div>
-            <div class="container">
-                <div class="row min-vh-100 align-items-center">
-                </div>
-               {{#if logged_in}}
-               {{#each lists as | list |}}
-                  <div class="card">
-                    <div class="card-content">
-                      <div class="content">
-                       <a href="/list/{{list.id}}"><h3 id="{{list.id}}">{{list.list_name}}</h3></a> 
-                        Lorem ipsum leo risus, 
-                      </div>
-                      <i class='fa fa-trash'></i>
-                    </div>
-                    
-                  </div>
-                  {{/each}}
-                  {{/if}}
-                  <button id="add-list" class="button is-warning">Add new list</button>
+<section class="home-section" id="home">
+  <div class="home-bg"></div>
+  <div class="container">
+    <div class="row min-vh-100 align-items-center">
+    </div>
+    {{#if logged_in}}
+      {{#each lists as |list|}}
+        <div class="card">
+          <div class="card-content">
+            <div class="content">
+              <a href="/list/{{list.id}}"><h3
+                  id="{{list.id}}"
+                >{{list.list_name}}</h3></a>
+              Lorem ipsum leo risus,
             </div>
-        </section> 
-   
-    <script src="../..js/lists.js"></script>
+            <i class="fa fa-trash"></i>
+          </div>
+
+        </div>
+      {{/each}}
+      <div id="modal-js-add" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <div class="box">
+            <h1 class="title">Add Item</h1>
+            <form id="addlist-form">
+              <label for="listname">List Name:</label>
+              <input type="text" id="listname" name="listname" /><br /><br />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+    {{/if}}
+    <button id="add-list" class="button is-warning js-modal-trigger" data-target="modal-js-add">Add new list</button>
+  </div>
+</section>
+
+<script src="../..js/lists.js"></script>
