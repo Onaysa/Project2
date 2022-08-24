@@ -20,11 +20,11 @@ const addListHandler = async (event) => {
 const deleteItemHandler = async (event) => {
     const response = await fetch("/api/lists/delete", {
         method: "DELETE",
-        body: JSON.stringify({ id: event.target.id }),
+        body: JSON.stringify({ id: event.target.viewportElement.id }),
         headers: { "Content-Type": "application/json" },
     });
 
-    console.log(event)
+    console.log(event.target.viewportElement.id)
 
     if (response.ok) {
         document.location.reload();
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Find all trash cans
-const trashCan = document.querySelectorAll("i")
+const trashCan = document.querySelectorAll(".card-content")
 for (let i = 0; i < trashCan.length; i++) {
     trashCan[i].addEventListener("click", deleteItemHandler)
 }
