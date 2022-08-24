@@ -1,0 +1,51 @@
+<table class="content-table">
+
+    <thead>
+        <tr id="listTitle">
+            <th id="{{list.id}}">{{list.list_name}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Items</td>
+            <td>cost</td>
+        </tr>
+
+        {{#each list.items as |items|}}
+        <tr>
+            <td>{{items.item_name}}</td>
+            <td>{{items.item_cost}}</td>
+            <td id="id"><i id="{{items.id}}" class="fa fa-trash"></i></td>
+        </tr>
+        {{/each}}
+
+    </tbody>
+</table>
+
+<div>
+    <button id="addItemBtn" class="add-new button is-warning js-modal-trigger" data-target="modal-js-add">Add new item
+    </button>
+
+</div>
+
+<div id="modal-js-add" class="modal">
+    <div class="modal-background"></div>
+
+    <div class="modal-content">
+        <div class="box">
+            <h1 class="title">Add Item</h1>
+            <form id="additem-form">
+                <label for="itemname">Item Name:</label>
+                <input type="text" id="itemname" name="itemname"><br><br>
+                <label for="itemcost">Item Cost:</label>
+                <input type="text" id="itemcost" name="itemcost"><br><br>
+                <input class="button is-danger" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+{{#if logged_in}}
+<script src="../../js/list.js"></script>
+{{/if}}
