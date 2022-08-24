@@ -7,7 +7,52 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" href="public/css/style.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Kdam+Thmor+Pro&family=Pacifico&display=swap" rel="stylesheet">
 </head>
+
+<style>
+    .content-table{
+        border-collapse: collapse ;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        left: 500px;
+        position: relative;
+    }
+
+    .content-table thead tr{
+        background-image: linear-gradient(to right,#ea4879,#fff, #fff );
+        background-color: linear-gradient(to right,#ea4879,#fff, #fff );;
+        color: #ffff;
+        text-align: left;
+        font-weight: bold;
+        left: 1px;
+        position: relative;
+        width: -1000px;
+
+    }
+    .content-table th,
+    .content-table td{
+        padding: 12px 15px;
+        left: 1px;
+        position: relative;
+    }
+
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddddd;
+        left: 1px;
+        position: relative;
+    }
+    .content-table tbody tr:nth-of-type(even){
+        background-color: #f3f3f3;
+        left: 1px;
+        position: relative;
+    }
+</style>
+
 <body>
     <header>
         
@@ -20,39 +65,48 @@
         </nav>
     </header>
 
-    <div class="card item">
-        <div class="card-content item">
-          <div class="content item1">
-            {List name}
-
+   
           
 
+    <table class="content-table">    
 
-          </div>
-          <div class="itemms2">
-            Items
+        <thead>
+         <tr>
+            <th>{List name}</th> 
+          </tr>
+        </thead>
+          <tbody>
+            <tr>
             
-          </div>
-          <div class="costs">
-            cost
+               <td>Items</td> 
+               <td>cost</td> 
+           
+             </tr>
+          
+         
+             <tr>
             
-          </div>
-          <div class="item-n">
-            {item1_name}
+                <td>item1_name</td> 
+                <td>item1_cost</td> 
+                <td class='fa fa-trash'></td>
+               
             
-          </div>
-          <div class="item-cost">
-            {item1_cost}
+              </tr> 
+
+
+              <tr>
             
-          </div>
-          <div class="item-n2">
-            {item2_name}
-          </div>
-          <div class="item-cost2">
-            {item2_cost}
+                <td>item2_name</td> 
+                <td>item2_cost</td> 
+                <td class='fa fa-trash'></td>
             
-          </div>
-          <div class="total">
+              </tr> 
+
+         
+             </tbody>
+       </table>   
+  
+       <div class="total">
             Total cost
             
           </div>
