@@ -14,16 +14,23 @@
     background-image: linear-gradient(to right,#FFFEA9, #fff , #fff);
     
   }
+
   
+  
+
   a {
     text-decoration: none;
     font-weight: bold;
     color: black;
+    right: 300px;
   }
   
   a:hover {
     color: #3486eb;
   }
+
+
+
   
   button {
     border: 0;
@@ -32,6 +39,7 @@
     transition: background-color .1s;
     cursor: pointer;
     border-radius: 5px;
+    left: -100;
   }
   
   .post-list {
@@ -64,16 +72,40 @@
   }
 
   
-  .wrapper {
-    width: 100%;
-    min-height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-  
-    flex-direction: column;
+  .footer{
+    
+      border: 1px solid #ccc;
+      display: flex;
+    align-items: flex-end;
+      padding: 1%;
+      font-size: 110%;
+     bottom: -500px;
+     position: relative;
+     right: -100px ;
+     border-radius: 40%;
+     width: 200px;
+     height: 180px;
+     text-align: center;
+     background-image: linear-gradient(to right,#ea4879,#FF5C8D, #fff );
+     box-shadow: #ea4879;
+      
   }
-  
+  .box1{
+    left: -220px;
+    position: relative;
+    background-color: #FF5C8D;
+    height: 25px;
+    width: 100px ;
+    bottom: -15px;
+  }
+  .box2{
+    left: -200px;
+    position: relative;
+    background-color: #f7f59f;
+    height: 27px;
+    width: 100px;
+    bottom: -15px;
+  }
   header {
     border-bottom: 1px solid #ccc;
     display: flex;
@@ -190,9 +222,15 @@
     bottom: -5px;
     width: 200px;
   }
-  
+ 
   .home-text .grocery{
     color: #FF5C8D;
+  }
+  .title{
+    left: 100px;
+    top: 500px;
+    bottom: -5px;
+    width: 200px;
   }
   .home-text p {
     font-family: "Poppins", sans-serif;
@@ -286,12 +324,14 @@
   }
   
   .save{
-    left: 800px;
+    left: 700px;
     position: relative;
     width: 100px;
-    top: -100px;
+    top: -200px;
   }
-
+  .title{
+    top: -10px;
+  }
   .item{
     margin: 0;
     width: 800px;
@@ -309,34 +349,34 @@
   }
 
   .itemm{
-    left: 60px;
+    left: 1px;
     position: relative;
     width: 300px;
-    top: -250px;
+    top: -280px;
   }
   #itemm{
-    left: 100px;
+    left: 30px;
     position: relative;
-    width: 800px;
-    top: -250px;
+    width: 600px;
+    top: -280px;
   }
   
   .cost{
-    left: 60px;
+    left: 1px;
     position: relative;
     width: 300px;
-    top: -250px;
+    top: -270px;
   }
   #cost{
-    left: 100px;
+    left: 30px;
     position: relative;
-    width: 800px;
-    top: -250px;
+    width: 600px;
+    top: -270px;
   }
   
   
   .save2{
-    left: 450px;
+    left: 300px;
     position: relative;
     width: 100px;
     top: -200px;
@@ -356,13 +396,18 @@
     width: 100px;
     top: -200px;
 }
+ 
+.total{
   
+}
 
-.costs{
-    left: 450px;
+.costs,
+.item-cost,
+.item-cost2{
+    left: 550px;
     position: relative;
     width: 100px;
-    top: -200px;
+    top: -330px;
 }
   
 .itemms2,
