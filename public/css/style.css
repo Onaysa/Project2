@@ -238,17 +238,8 @@
     color: #3486eb;
   }
   
-.card,
-.card-content{
-    justify-content: left;
-    padding: 0 15px;
-    top: 20px;
-    bottom: 20px;
-    width:300px;
-    height:300px;
-    background-size:contain;
-    background-position:center;
-  
+.card {
+  margin: 5px;
 }
 
 .content-table{
@@ -451,12 +442,6 @@
     margin-bottom: 5%;
   }
   
- 
-
-  .card{
-      margin-bottom: 1em;
-      margin-top: 1em;
-  }
 
 
   .rows{

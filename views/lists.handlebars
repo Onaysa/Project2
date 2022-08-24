@@ -1,7 +1,7 @@
 {{#if logged_in}}
 
 {{#each lists as |list|}}
-<div class="card">
+<div class="card column is-one-third">
   <div class="card-content">
     <div class="content">
       <a href="/list/{{list.id}}">
@@ -11,6 +11,8 @@
     <i id="{{list.id}}" class="fa fa-trash"></i>
   </div>
 </div>
+
+
 {{/each}}
 <div class="column ">
   <button class="add-new button is-warning js-modal-trigger" data-target="modal-js-add">Add new item </button>
@@ -23,7 +25,7 @@
       <form id="addlist-form">
         <label for="listname">List Name:</label>
         <input type="text" id="listname" name="listname" /><br /><br />
-        <input type="submit" value="Submit" />
+        <input class="button is-danger" type="submit" value="Submit" />
       </form>
     </div>
   </div>

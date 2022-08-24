@@ -18,10 +18,10 @@
         <nav class="navbar mt-2">
           {{#if logged_in}}
            <a href="/lists" class="navbar-item is-hoverable pt-1 mr-4">My lists</a>
-            <button id="logout" class="box1">logout</button>
+            <button id="logout" class="button is-danger box1">logout</button>
           {{else}}
-             <button id="login" class="box2">login</button>
-             <button id="signup" class="box2">sign up</button>
+             <button id="login" class="button is-danger pt-1 mr-4 box2">login</button>
+             <button id="signup" class="button is-warning pt-1 mr-4 box2">sign up</button>
           {{/if}}
         </nav>
     </header>
