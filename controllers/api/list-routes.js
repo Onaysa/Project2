@@ -7,7 +7,7 @@ router.post("/add", async (req, res) => {
         try {
             const newList = await List.create({
                 list_name: req.body.listName,
-                user_id: req.body.listId
+                user_id: req.session.userId
             })
             res.status(200).json(newList)
         } catch (err) {
