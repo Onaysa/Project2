@@ -1,31 +1,37 @@
-<div class="column">
-  <h2 class="title pb-4">login:</h2>
-  <hr>
+<div class="text-black column has-text-centered" style="border-radius: 25px;">
 
+  <div class="columns is-mobile is-centered">
+    <div class="column is-half">
+      <p class="subtitle is-3">Login</p>
+      <form class="login-form field">
 
-  <div class="card-content">
-    <div class="content">
+        <div class="has-text-left">
+          <span class="icon-text">
+            <span class="icon">
+              <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+            </span>
+            <span>Email</span>
+          </span>
+          <div class="control">
+            <input id="email-login" class="input" type="email" placeholder="e.g. alexsmith@gmail.com" />
+          </div>
+        </div>
 
+        <div class="has-text-left">
+          <span class="icon-text">
+            <span class="icon">
+              <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+            </span>
+            <span>Password</span>
+          </span>
+          <div class="control is-centered">
+            <input id="password-login" class="input" type="password" />
+          </div>
+        </div>
+        <button type="submit" class="button is-danger has-text-centered">Submit</button>
+      </form>
     </div>
   </div>
 </div>
-
-<form class="login-form">
-
-  <div>
-    <label class="email" for="email-login">email:</label>
-    <input type="text" id="email-login" />
-  </div>
-  <div>
-    <label class="password" for="password-login">password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit" class="button is-warning">login</button>
-  </div>
-
-</form>
-</div>
-
 <!-- javascript file-->
-<script src="./js/login.js"></script>
+<script src="../js/login.js"></script>
