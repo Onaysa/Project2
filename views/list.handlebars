@@ -1,30 +1,42 @@
+<table class="content-table">
+
+    <thead>
+        <tr>
+            <th>List name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+
+            <td>Items</td>
+            <td>cost</td>
+
+        </tr>
+
+        {{#each list.items as |items|}}
+        <tr>
 
 
-{{#each list.items as |items|}}
+            <td>{{items.item_name}}</td>
+            <td>{{items.item_cost}}</td>
+            <td><i class="fa fa-trash"></i></td>
 
 
-<div class="card item">
-    <div class="card-content item">
-        <div class="content item1">
-            <p>{{items.item_name}}</p>
-            <p>{{items.item_cost}}</p>
-        </div>
-    </div>
-</div>
-{{/each}}
-<div class="total">
-    Total cost
+        </tr>
+        {{/each}}
 
-</div>
-<div class="total-cost">
-    
 
-</div>
+
+
+    </tbody>
+</table>
+
 <div>
-    <button  class="add-new button is-warning">Add new item </button>
+    <button class="add-new button is-warning">Add new item </button>
 
 </div>
 
 
 
-<script src="../..js/list.js"></script>
+<script src="../js/list.js"></script>
+
