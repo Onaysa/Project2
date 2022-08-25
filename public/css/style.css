@@ -1,6 +1,6 @@
 /*fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
+​
 * {
     box-sizing: border-box;
   }
@@ -14,21 +14,19 @@
     background-image: linear-gradient(to right,#FFFEA9, #fff , #fff);
     
   }
-
-  
-  
-
+ 
+​
   a {
     text-decoration: none;
     font-weight: bold;
     color: black;
-   
+​
   }
   
   a:hover {
     color: #3486eb;
   }
-
+​
   .post-list {
     margin: 0;
     padding: 0;
@@ -57,7 +55,7 @@
   form label {
     display: block;
   }
-
+​
   
   .footer{
     
@@ -100,7 +98,6 @@
     align-items: center;
     padding: 0 1%;
     background-color: white;
-   
     background-image: linear-gradient(to right,#FFFEA9, #fff , #fff);
  
   }
@@ -109,7 +106,7 @@
     flex: 1;
     padding: 2% 4%;
   }
- 
+​
   .home-section .home-bg{
     position: absolute;
   left: 5px;
@@ -138,7 +135,7 @@
    top: 20px;
     }
   
-
+​
   .food-img img {
     width: 400px;
      height: 400px;
@@ -154,7 +151,7 @@
     position: relative;
     left: cals(50% - 50%);
     top: calc(50% - 50%);
-
+​
   }
  
   .onion img{
@@ -163,9 +160,9 @@
     position: relative;
     width: 100px;
     height: 100px;
-
+​
   }
-
+​
   .bac img{
     top: -300px;
     width: 160px;
@@ -174,7 +171,7 @@
     position: relative;
     bottom: 20px;
   }
-
+​
   .tiny img{
     left: 150px;
     top: -460px;
@@ -195,7 +192,7 @@
      left: -10px;
       top: 5px;
       bottom: -5px;
-
+​
   }
   .home-text  h1 {
     font-family: "Poppins", sans-serif;
@@ -211,7 +208,7 @@
   .home-text .grocery{
     color: #FF5C8D;
   }
-
+​
   .home-text p {
     font-family: "Poppins", sans-serif;
     text-align: center;
@@ -239,16 +236,15 @@
 .card {
   margin: 5px;
 }
-
+​
 .content-table{
   border-collapse: collapse ;
   margin: 25px 0;
   font-size: 0.9em;
   min-width: 400px;
- 
   position: relative;
 }
-
+​
 .content-table thead tr{
   background-image: linear-gradient(to right,#ea4879,#fff, #fff );
   background-color: linear-gradient(to right,#ea4879,#fff, #fff );;
@@ -258,7 +254,7 @@
   left: 1px;
   position: relative;
   width: -1000px;
-
+​
 }
 .content-table th,
 .content-table td{
@@ -266,7 +262,7 @@
   left: 1px;
   position: relative;
 }
-
+​
 .content-table tbody tr {
   border-bottom: 1px solid #dddddddd;
   left: 1px;
@@ -277,13 +273,13 @@
   left: 1px;
   position: relative;
 }
-
+​
 #add-list{
     left: 900px;
     top: -1100px;
     position: relative;
 }
-
+​
   
   .list-name{
     left: 200px;
@@ -304,7 +300,7 @@
     width: 100px;
     top: -200px;
   }
-
+​
   .item{
     margin: 0;
     width: 800px;
@@ -320,7 +316,7 @@
     text-align: center;
   
   }
-
+​
   .itemm{
     left: 1px;
     position: relative;
@@ -355,13 +351,13 @@
     top: -200px;
     
   }
-
-.add-new { 
+​
+.add-new {
     position: relative;
     width: 200px;
     top: -0px
 }
-
+​
 .itemms2{
     left: 450px;
     position: relative;
@@ -376,7 +372,7 @@
   width: 100px;
   top: -500px;
 }
-
+​
 .costs,
 .item-cost,
 .item-cost2{
@@ -394,9 +390,9 @@
     width: 100px;
     top: -300px;
 }
-
-
-
+​
+​
+​
 .delete-post-btn {
     background-color: #d41414;
   }
@@ -438,13 +434,12 @@
   .edit-post-form {
     margin-bottom: 5%;
   }
-  
-
-
+​
   .rows{
       display:flex;
       flex-direction: column;
   }
+​
   @media (max-width: 844px){
     .home-text  h1 {
       font-family: "Poppins", sans-serif;
@@ -461,9 +456,3 @@
       text-align: left;
     }
   }
-
-
-
-
-
-
