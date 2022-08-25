@@ -43,8 +43,7 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 * Application uses at least one new library, package, or technology not covered in class.
 
-
-Click here for live link!
+<a href="https://shopping-list-project2.herokuapp.com/">Click here for live link!</a>
 
 ![alt text](assets/images/homepage.png)
     
